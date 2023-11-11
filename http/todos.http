@@ -1,0 +1,32 @@
+### GET todos
+# GET TODOS
+GET http://localhost:3000/api/todos
+
+###
+# GET BY ID TODO
+GET http://localhost:3000/api/todos/4
+
+
+### 
+# POST TODO
+POST http://localhost:3000/api/todos
+Content-Type: application/json
+
+{
+  "text": "Buy suggar",
+  "completedAt": "2022-01-01T21:11:35.000Z"
+}
+
+###
+# PUT TODO
+
+PUT http://localhost:3000/api/todos/5
+Content-Type: application/json
+
+{
+  "completedAt": "2023-01-01T21:11:35.000Z"
+}
+
+###
+# DELETE TODO
+DELETE http://localhost:3000/api/todos/5
